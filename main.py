@@ -19,8 +19,9 @@ def process_document(input_file):
 
 
 input_file = "chinese-notes-text"
-output_file = "separated-notes"
+output_file = "separated-notes.txt"
 result = process_document(input_file)
 with open(output_file, "w", encoding="utf-8") as output_file:
     for line in result:
         output_file.write(line + "\n")
+
